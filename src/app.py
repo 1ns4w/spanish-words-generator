@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # returns an array of words of length n or writes words of length n to a file
-def getWordsOfLength(length, outfile_name = None):
+def getSpanishWords(words_length, outfile_name = None):
     page = requests.get("https://github.com/javierarce/palabras/blob/master/listado-general.txt")
     soup = BeautifulSoup(page.text, 'lxml')
     words_tags = soup.find_all('td', class_ = 'blob-code')
@@ -10,9 +10,9 @@ def getWordsOfLength(length, outfile_name = None):
     if outfile_name != None:
         with open(outfile_name, 'w') as outfile:
             for word in words:
-                if len(word) == length:
+                if len(word) == 4:
                     outfile.write(word + '\n')
     else:
-        return words
+        return list(filter(lambda word: len(word) == words_length, words))
 
-print(getWordsOfLength(1))
+print(getSpanishWords(2))
