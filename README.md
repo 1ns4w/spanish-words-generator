@@ -1,6 +1,7 @@
-# Dependencies
+# Getting started
 
-To get started, make sure to create a virtual enviroment and install the project dependencies.
+To get started, follow the next instructions:
+
 ```bash
 cd spanish-words-generator
 ```
@@ -12,7 +13,6 @@ python3 -m venv .venv
 ```bash
 source ./.venv/bin/activate
 ```
-
 
 ```bash
 pip install -r requirements.txt
