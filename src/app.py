@@ -14,5 +14,3 @@ def getWordsOfLength(length, outfile_name = None):
                     outfile.write(word + '\n')
     else:
         return words
-
-print(getWordsOfLength(1))
