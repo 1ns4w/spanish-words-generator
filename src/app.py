@@ -10,7 +10,7 @@ def getSpanishWords(words_length, outfile_name = None):
     if outfile_name != None:
         with open(outfile_name, 'w') as outfile:
             for word in words:
-                if len(word) == 4:
+                if len(word) == words_length:
                     outfile.write(word + '\n')
     else:
         return list(filter(lambda word: len(word) == words_length, words))
