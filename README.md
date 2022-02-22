@@ -21,3 +21,17 @@ pip install -r requirements.txt
 ```bash
 python3 ./src/app.py
 ```
+
+# Examples
+
+Create or write 365 words of length 5 to a file called "palabras5.txt" in the current folder.
+```python
+infile_path = "./palabras5.txt"
+getSpanishWords(5, infile_path, 365)
+```
+
+Return an array of 365 words of length 5 and assign it to words.
+```python
+words = getSpanishWords(5, total_words = 365)
+print(words) # [...]
+```
