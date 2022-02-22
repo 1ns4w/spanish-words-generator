@@ -14,5 +14,3 @@ def getSpanishWords(words_length, outfile_name = None):
                     outfile.write(word + '\n')
     else:
         return list(filter(lambda word: len(word) == words_length, words))
-
-print(getSpanishWords(2))
