@@ -15,7 +15,7 @@ source ./.venv/bin/activate
 ```
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ```bash
