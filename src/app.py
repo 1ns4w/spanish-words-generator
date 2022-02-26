@@ -10,7 +10,7 @@ def getSpanishWords(words_length, total_words = None, outfile_path = None):
 
     words_tags = soup.find_all('td', class_ = 'blob-code')
     words_tags_text = list(map(lambda word_tag: word_tag.text, words_tags))
-    total_words = len(words_tags_text) if total_words > len(words_tags_text) or total_words == None else total_words
+    total_words = len(words_tags_text) if total_words == None or total_words > len(words_tags_text) else total_words
 
     words = []
     shuffle(words_tags_text)
