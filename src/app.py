@@ -16,10 +16,8 @@ def getSpanishWords(words_length, total_words = None, outfile_path = None):
     shuffle(words_tags_text)
 
     for word in words_tags_text:
-        
         if len(word) == words_length:
             words.append(word)
-            
         if len(words) == total_words:
             break
 
