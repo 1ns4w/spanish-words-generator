@@ -13,7 +13,6 @@ def getSpanishWords(words_length, total_words = None, outfile_path = None):
     total_words = len(words_tags_text) if total_words == None or total_words > len(words_tags_text) else total_words
 
     words = []
-    shuffle(words_tags_text)
 
     for word in words_tags_text:
         if len(word) == words_length:
