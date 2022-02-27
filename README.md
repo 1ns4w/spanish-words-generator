@@ -26,12 +26,12 @@ python3 ./src/app.py
 
 Create or write 365 words of length 5 to a file called "palabras5.txt" in the current folder.
 ```python
-infile_path = "./palabras5.txt"
-getSpanishWords(5, infile_path, 365)
+outfile_path = "./palabras5.txt"
+getSpanishWords(5, 365, outfile_path)
 ```
 
 Return an array of 365 words of length 5 and assign it to words.
 ```python
-words = getSpanishWords(5, total_words = 365)
+words = getSpanishWords(5, 365)
 print(words) # [...]
 ```
